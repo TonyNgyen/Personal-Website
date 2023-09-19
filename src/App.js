@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <nav className='flex justify-between'>
-        <h1 className='w-1/2 bg-slate-300'>Tony Nguyen</h1>
+        <h1 className='bg-slate-300 text-4xl font-montserrat font-semibold'>Tony Nguyen</h1>
         <ul className='flex justify-around w-1/3'>
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
