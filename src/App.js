@@ -8,7 +8,7 @@ function App() {
         <ul className='flex justify-around w-1/3'>
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Contact Me</a></li>
         </ul>
       </nav>
     </div>
