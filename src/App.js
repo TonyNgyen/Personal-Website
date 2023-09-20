@@ -2,15 +2,18 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <nav className='flex justify-between'>
-        <h1 className='bg-slate-300 text-4xl font-montserrat font-semibold'>Tony Nguyen</h1>
-        <ul className='flex justify-around w-1/3'>
+    <div className="App bg-white">
+      <nav className='flex justify-between py-10 px-20'>
+        <h1 className=' text-4xl font-montserrat font-semibold'>Tony Nguyen</h1>
+        <ul className='flex justify-around w-1/3 text-xl font-montserrat'>
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Contact Me</a></li>
         </ul>
       </nav>
+      <header>
+        
+      </header>
     </div>
   );
 }
