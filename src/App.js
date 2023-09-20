@@ -18,6 +18,4 @@ function App() {
 export default App;
 
 // https://huemint.com/website-1/#palette=fbf9f6-042e38-d02622
-// https://coolors.co/2c363f-a41623-f2f5ea-f85e00-918450
-
-// Test
+// https://realtimecolors.com/?colors=2C363F-fbf9f6-A41623-dfdad2-86775f
