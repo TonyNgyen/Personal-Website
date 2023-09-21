@@ -17,20 +17,23 @@ function App() {
           <li><a href="#">Contact Me</a></li>
         </ul>
       </nav>
-      <header className='bg-Snow h-5/6 flex justify-center items-center font-montserrat'>
-        <article className=''>
-          <h1 className='text-7xl font-semibold text-center mb-10'>
-            <span className=''>
+      <header className='bg-Snow h-5/6 flex justify-center items-center font-montserrat w-full'>
+        <article className='w-full'>
+          <h1 className='text-7xl font-semibold text-center mb-14'>
+            <span className='w-full'>
               Hey, I'm {text}
             </span>
             <Cursor cursorColor='#A41623'></Cursor>
           </h1>
-          <h2 className='w-3/5 text-center mx-auto'>
-          A software engineer expanding his skills and building fullstack 
-          applications and websites that are useful to others and interest me.
+          <h2 className='text-center mx-auto w-4/12 text-xl leading-8'>
+            A software engineer expanding his skills and building fullstack 
+            applications and websites that are useful to others.
           </h2>
         </article>
       </header>
+      <div className='h-16 bg-red-200'>
+
+      </div>
     </div>
   );
 }
