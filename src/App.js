@@ -1,37 +1,17 @@
 import './App.css';
-import { Cursor, Typewriter, useTypewriter } from 'react-simple-typewriter'
+import Arrow from './Arrow';
+import Hero from './Hero';
+import Navbar from './Navbar';
 
 function App() {
-  const [text, count] = useTypewriter({
-    words: ["Tony", "a software engineer"],
-    loop: true,
-    delaySpeed: 2000,
-  })
   return (
-    <div className="App h-screen">
-      <nav className='flex justify-between py-8 px-20 sticky top-0 bg-white'>
-        <h1 className=' text-4xl font-montserrat font-semibold'>Tony Nguyen</h1>
-        <ul className='flex justify-around w-1/3 text-xl font-montserrat pt-1'>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact Me</a></li>
-        </ul>
-      </nav>
-      <header className='bg-Snow h-5/6 flex justify-center items-center font-montserrat w-full'>
-        <article className='w-full'>
-          <h1 className='text-7xl font-semibold text-center mb-14'>
-            <span className='w-full'>
-              Hey, I'm {text}
-            </span>
-            <Cursor cursorColor='#A41623'></Cursor>
-          </h1>
-          <h2 className='text-center mx-auto w-4/12 text-xl leading-8'>
-            A software engineer expanding his skills and building fullstack 
-            applications and websites that are useful to others.
-          </h2>
-        </article>
-      </header>
-      <div className='h-16 bg-red-200'>
+    <div className="App snap-y snap-mandatory">
+      <Navbar />
+      <div className=''>
+        <Hero />
+        <Arrow />
+      </div>
+      <div className='snap-start h-screen about bg-slate-300' id='about'>
 
       </div>
     </div>
