@@ -2,8 +2,27 @@ import "./App.css";
 import Arrow from "./Arrow";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
+import Chip from "./Chip";
 
 function App() {
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "MongoDB",
+    "Python",
+    "Java",
+    "C",
+    "C++",
+    "GIT",
+    "GitHub",
+    "Pandas",
+    "Web Scraping",
+    "NextJS",
+    "Flask",
+  ];
+  const chips = skills.map((skill) => <Chip name={skill}></Chip>);
   return (
     <div className="App">
       <Navbar />
@@ -18,36 +37,38 @@ function App() {
             I do, and how I am outside of work
           </h2>
         </article>
-        <article className="grid grid-cols-2 h-3/4 justify-items-center w-5/6 mx-auto">
-          <aside className=" w-3/4">
+        <article className="grid grid-cols-2 h-3/4 justify-items-center w-4/5 mx-auto">
+          <aside className="w-9/12">
             <p className="text-3xl font-semibold font-montserrat mb-8">
               Learn More About Me
             </p>
             <aside className="text-lg leading-8">
               <p className="mb-5">
-                I am a software engineer with a focus on full-stack development.
-                I enjoy the entire process of full-stack development from
-                designing the application, creating the frontend, and building
-                the backend. However, I am open to shifting my focus elsewhere
-                depending on the opportunity.
+                I'm a <b>software engineer</b> with a focus on full-stack
+                development. I enjoy the entire process of full-stack
+                development from designing the application, creating the
+                frontend, and building the backend. I'm open to
+                <b> shifting</b> my focus elsewhere depending on the
+                opportunity.
               </p>
               <p className="mb-5">
-                My projects seek to make my life more convenient in any way
+                My projects seek to make life more <b>convenient</b> in any way
                 possibe. When I'm not coding, I am always searching for new
                 technologies that I can use for future projects as well as
-                improving my current projects which displayed in the projects
-                section.
+                improving my current projects which displayed in the
+                <b> Projects</b> section.
               </p>
               <p>
-                I am interested in job opportunities where I can contribute and
-                develop professionally. Please do not hesitate to get in touch
-                with me if you have a good opportunity that matches my
+                I am interested in <b>job opportunities</b> where I can
+                contribute and develop professionally. Please do not hesitate to
+                <b> contact</b> me if you have a good opportunity that matches my
                 qualifications or requires me to adapt for the team.
               </p>
             </aside>
           </aside>
-          <aside className="w-3/4 text-center">
-            <p className="text-3xl font-semibold">Technical Skills</p>
+          <aside className="w-9/12">
+            <p className="text-3xl font-semibold mb-8">Technical Skills</p>
+            <div className="flex flex-wrap">{chips}</div>
           </aside>
         </article>
       </section>
