@@ -3,8 +3,32 @@ import Arrow from "./Arrow";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Chip from "./Chip";
+import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 
 function App() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_hrfd87w",
+        "template_8h48u9n",
+        form.current,
+        "faNgOb9LHJLLNVTq6"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("Message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   const skills = [
     "HTML",
     "CSS",
@@ -83,13 +107,38 @@ function App() {
         </article>
       </section>
       <section className="h-screen bg-gray-100 pt-40" id="contact">
-        <article className="text-center font-montserrat">
-          <h2 className="text-5xl font-semibold mb-6">Contact Me</h2>
+        <article className="font-montserrat">
+          <h2 className="text-5xl font-semibold mb-6 text-center">
+            Contact Me
+          </h2>
           <div className="w-10 bg-Ruby h-2 mx-auto mb-6 rounded-md"></div>
-          <h2 className="text-xl mx-auto w-4/12 mb-20">
+          <h2 className="text-xl mx-auto w-5/12 mb-20 text-center">
             If you want to talk about an opportunity or just want to talk to me,
             please do not hesitate to contact me!
           </h2>
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="bg-Snow w-5/12 mx-auto px-10 py-8 drop-shadow-2xl rounded-lg"
+          >
+            <label className="block mb-2">Name</label>
+            <input
+              type="text"
+              name="user_name"
+              className="block mb-8 bg-gray-200"
+            />
+            <label className="block mb-2">Email</label>
+            <input
+              type="email"
+              name="user_email"
+              className="block mb-8 bg-gray-200"
+            />
+            <label className="block mb-2">Message</label>
+            <textarea name="message" className="block bg-gray-200" />
+            <button className="hover:cursor-pointer bg-red-200">
+              <input type="submit" value="Send" className="hover:cursor-pointer"/>
+            </button>
+          </form>
         </article>
       </section>
     </div>
