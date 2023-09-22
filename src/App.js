@@ -33,8 +33,8 @@ function App() {
           <h2 className="text-5xl font-semibold mb-6">About Me</h2>
           <div className="w-10 bg-Ruby h-2 mx-auto mb-6 rounded-md"></div>
           <h2 className="text-xl mx-auto w-4/12 mb-20">
-            This is where you will find out more about my technical skills, what
-            I do, and how I am outside of work
+            Here you will find out more about my technical skills, what I do,
+            and my professional interests.
           </h2>
         </article>
         <article className="grid grid-cols-2 h-3/4 justify-items-center w-4/5 mx-auto">
@@ -61,8 +61,8 @@ function App() {
               <p>
                 I am interested in <b>job opportunities</b> where I can
                 contribute and develop professionally. Please do not hesitate to
-                <b> contact</b> me if you have a good opportunity that matches my
-                qualifications or requires me to adapt for the team.
+                <b> contact</b> me if you have a good opportunity that matches
+                my qualifications or requires me to adapt for the team.
               </p>
             </aside>
           </aside>
@@ -72,8 +72,26 @@ function App() {
           </aside>
         </article>
       </section>
-      <section className="h-screen bg-green-200" id="projects"></section>
-      <section className="h-screen bg-blue-200" id="contact"></section>
+      <section className="h-screen bg-Snow pt-40" id="projects">
+        <article className="text-center font-montserrat">
+          <h2 className="text-5xl font-semibold mb-6">Projects</h2>
+          <div className="w-10 bg-Ruby h-2 mx-auto mb-6 rounded-md"></div>
+          <h2 className="text-xl mx-auto w-4/12 mb-20">
+            This is where you will some of my personal projects as well as the
+            technologies that I used for each.
+          </h2>
+        </article>
+      </section>
+      <section className="h-screen bg-gray-100 pt-40" id="contact">
+        <article className="text-center font-montserrat">
+          <h2 className="text-5xl font-semibold mb-6">Contact Me</h2>
+          <div className="w-10 bg-Ruby h-2 mx-auto mb-6 rounded-md"></div>
+          <h2 className="text-xl mx-auto w-4/12 mb-20">
+            If you want to talk about an opportunity or just want to talk to me,
+            please do not hesitate to contact me!
+          </h2>
+        </article>
+      </section>
     </div>
   );
 }
