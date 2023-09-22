@@ -25,21 +25,24 @@ function App() {
             </p>
             <aside className="text-lg leading-8">
               <p className="mb-5">
-                I am a software engineer with a focus on full-stack development. I
-                enjoy the entire process of full-stack development from designing
-                the application, creating the frontend, and building the backend.
+                I am a software engineer with a focus on full-stack development.
+                I enjoy the entire process of full-stack development from
+                designing the application, creating the frontend, and building
+                the backend. However, I am open to shifting my focus elsewhere
+                depending on the opportunity.
               </p>
               <p className="mb-5">
                 My projects seek to make my life more convenient in any way
                 possibe. When I'm not coding, I am always searching for new
                 technologies that I can use for future projects as well as
-                improving my current projects, displayed in the projects section.
+                improving my current projects which displayed in the projects
+                section.
               </p>
               <p>
                 I am interested in job opportunities where I can contribute and
                 develop professionally. Please do not hesitate to get in touch
                 with me if you have a good opportunity that matches my
-                qualifications and expertise.
+                qualifications or requires me to adapt for the team.
               </p>
             </aside>
           </aside>
