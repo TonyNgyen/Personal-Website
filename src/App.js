@@ -106,7 +106,7 @@ function App() {
           </h2>
         </article>
       </section>
-      <section className="h-screen bg-gray-100 pt-40" id="contact">
+      <section className="bg-gray-100 pt-40 pb-40" id="contact">
         <article className="font-montserrat">
           <h2 className="text-5xl font-semibold mb-6 text-center">
             Contact Me
@@ -121,23 +121,36 @@ function App() {
             onSubmit={sendEmail}
             className="bg-Snow w-5/12 mx-auto px-10 py-8 drop-shadow-2xl rounded-lg"
           >
-            <label className="block mb-2">Name</label>
+            <label className="block mb-2 font-bold">Name</label>
             <input
               type="text"
               name="user_name"
-              className="block mb-8 bg-gray-200"
+              className="block mb-8 bg-gray-200 w-full p-4 rounded-md drop-shadow-sm"
+              placeholder="Enter Your Name"
             />
-            <label className="block mb-2">Email</label>
+            <label className="block mb-2 font-bold">Email</label>
             <input
               type="email"
               name="user_email"
-              className="block mb-8 bg-gray-200"
+              className="block mb-8 bg-gray-200 w-full p-4 rounded-md drop-shadow-sm"
+              placeholder="Enter Your Email"
             />
-            <label className="block mb-2">Message</label>
-            <textarea name="message" className="block bg-gray-200" />
-            <button className="hover:cursor-pointer bg-red-200">
-              <input type="submit" value="Send" className="hover:cursor-pointer"/>
-            </button>
+            <label className="block mb-2 font-bold">Message</label>
+            <textarea
+              name="message"
+              placeholder="Enter Your Message"
+              rows="8"
+              className="block bg-gray-200 mb-8 w-full resize-none rounded-md drop-shadow-sm p-4 h-auto"
+            />
+            <div className="flex justify-end">
+              <button className="hover:cursor-pointer bg-Ruby rounded-md">
+                <input
+                  type="submit"
+                  value="Send"
+                  className="hover:cursor-pointer text-white font-bold text-xl py-3 px-10"
+                />
+              </button>
+            </div>
           </form>
         </article>
       </section>
