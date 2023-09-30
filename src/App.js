@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import React from "react";
 import About from "./About";
 import Contact from "./Contact";
+import image from "./images/example.png"
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
             This is where you will some of my personal projects as well as the
             technologies that I used for each.
           </h2>
+          <img src={image} className="w-1/3">
+
+          </img>
         </article>
       </section>
       <Contact />
