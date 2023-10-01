@@ -21,7 +21,7 @@ function About() {
       ];
       const chips = skills.map((skill) => <Chip name={skill}></Chip>);
   return (
-    <section className="bg-gray-100 h-screen pt-40" id="about">
+    <section className="bg-gray-100 min-h-screen pt-40 pb-20" id="about">
         <article className="text-center font-montserrat">
           <h2 className="text-5xl font-semibold mb-6">About Me</h2>
           <div className="w-10 bg-Ruby h-2 mx-auto mb-6 rounded-md"></div>

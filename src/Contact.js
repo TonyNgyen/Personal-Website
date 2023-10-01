@@ -25,7 +25,7 @@ function Contact() {
       );
   };
   return (
-    <section className="bg-gray-100 pt-40 pb-40" id="contact">
+    <section className="bg-gray-100 pt-40 pb-40 min-h-screen" id="contact">
         <article className="font-montserrat">
           <h2 className="text-5xl font-semibold mb-6 text-center">
             Contact Me
