@@ -24,7 +24,7 @@ function Projects() {
           <p className="text-lg leading-8 mb-5">
             K-Calendar is a web application which acts as an informational hub
             for Korean pop. Users can use K-Calendar to track upcoming K-pop
-            releases for the month as well aslook at artists' past releases.
+            releases for the month as well as look at artists' past releases.
           </p>
           <aside className="flex flex-wrap">
             <Chip name="HTML" />

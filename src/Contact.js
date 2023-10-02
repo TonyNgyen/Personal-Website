@@ -1,8 +1,13 @@
 import emailjs from "@emailjs/browser";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 function Contact() {
   const form = useRef();
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,6 +23,11 @@ function Contact() {
         (result) => {
           console.log(result.text);
           console.log("Message sent");
+          setFormValues({
+            name: "",
+            email: "",
+            message: ""
+          });
         },
         (error) => {
           console.log(error.text);
@@ -44,6 +54,8 @@ function Contact() {
             name="user_name"
             className="block mb-8 bg-gray-200 w-full p-4 rounded-md drop-shadow-sm"
             placeholder="Enter Your Name"
+            value={formValues.name}
+            onChange={(e) => setFormValues({ ...formValues, name: e.target.value })}
           />
           <label className="block mb-2 font-bold">Email</label>
           <input
@@ -51,6 +63,8 @@ function Contact() {
             name="user_email"
             className="block mb-8 bg-gray-200 w-full p-4 rounded-md drop-shadow-sm"
             placeholder="Enter Your Email"
+            value={formValues.email}
+            onChange={(e) => setFormValues({ ...formValues, email: e.target.value })}
           />
           <label className="block mb-2 font-bold">Message</label>
           <textarea
@@ -58,6 +72,8 @@ function Contact() {
             placeholder="Enter Your Message"
             rows="8"
             className="block bg-gray-200 mb-8 w-full resize-none rounded-md drop-shadow-sm p-4 h-auto"
+            value={formValues.message}
+            onChange={(e) => setFormValues({ ...formValues, message: e.target.value })}
           />
           <div className="flex justify-end">
             <button className="hover:cursor-pointer bg-Ruby rounded-md">
