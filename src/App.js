@@ -25,9 +25,9 @@ function App() {
           </h2>
         </article>
         <article className="flex mx-auto w-8/12">
-          <img src={image} className="w-7/12 mr-10"></img>
+          <a href="https://k-calendar-2.vercel.app/" className="mr-10"><img src={image}></img></a>
           <aside className="font-montserrat my-auto">
-            <h2 className="text-3xl font-semibold mb-5">K-Calendar</h2>
+            <h2 className="text-3xl font-semibold mb-5 hover:text-Ruby hover:underline underline-offset-8"><a href="https://k-calendar-2.vercel.app/">K-Calendar</a></h2>
             <p className="text-lg leading-8 mb-5">
               K-Calendar is a web application which acts as an informational hub
               for Korean pop. Users can use K-Calendar to track upcoming K-pop
