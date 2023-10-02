@@ -4,7 +4,7 @@ import Chip from "./Chip";
 
 function Projects() {
   return (
-    <section className="min-h-screen bg-Snow pt-40" id="projects">
+    <section className="min-h-screen bg-Snow pt-40 pb-28" id="projects">
       <article className="text-center font-montserrat">
         <h2 className="text-5xl font-semibold mb-6">Projects</h2>
         <div className="w-10 bg-Ruby h-2 mx-auto mb-6 rounded-md"></div>
