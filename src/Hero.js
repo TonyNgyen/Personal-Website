@@ -13,11 +13,11 @@ function Hero() {
       id="home"
     >
       <article className="w-full">
-        <h1 className="text-7xl font-semibold text-center mb-14">
+        <h1 className="lg:text-7xl font-semibold text-center mb-14 text-4xl">
           <span className="w-full">Hey, I'm {text}</span>
           <Cursor cursorColor="#A41623"></Cursor>
         </h1>
-        <h2 className="text-center mx-auto w-4/12 text-xl leading-8 mb-5">
+        <h2 className="text-center mx-auto lg:w-5/12 text-xl leading-8 mb-5 w-9/12">
           A software engineer expanding his skills and building fullstack
           applications and websites that are useful to others.
         </h2>

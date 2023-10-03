@@ -8,12 +8,12 @@ function Projects() {
       <article className="text-center font-montserrat">
         <h2 className="text-5xl font-semibold mb-6">Projects</h2>
         <div className="w-10 bg-Ruby h-2 mx-auto mb-6 rounded-md"></div>
-        <h2 className="text-xl mx-auto w-4/12 mb-20">
+        <h2 className="text-xl mx-auto lg:w-5/12 mb-20 md:w-8/12 w-11/12">
           This is where you will some of my personal projects as well as the
           technologies that I used for each.
         </h2>
       </article>
-      <article className="flex mx-auto w-8/12">
+      <article className="lg:flex mx-auto w-8/12">
         <a href="https://k-calendar-2.vercel.app/" className="mr-10">
           <img src={image}></img>
         </a>

@@ -39,14 +39,14 @@ function Contact() {
       <article className="font-montserrat">
         <h2 className="text-5xl font-semibold mb-6 text-center">Contact Me</h2>
         <div className="w-10 bg-Ruby h-2 mx-auto mb-6 rounded-md"></div>
-        <h2 className="text-xl mx-auto w-5/12 mb-20 text-center">
+        <h2 className="text-xl mx-auto lg:w-6/12 mb-20 text-center w-10/12">
           If you want to talk about an opportunity or just want to talk to me
           about anything, please do not hesitate to contact me!
         </h2>
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="bg-Snow w-5/12 mx-auto px-10 py-8 drop-shadow-2xl rounded-lg"
+          className="bg-Snow lg:w-5/12 mx-auto px-10 py-8 drop-shadow-2xl rounded-lg w-10/12"
         >
           <label className="block mb-2 font-bold">Name</label>
           <input

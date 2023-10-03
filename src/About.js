@@ -25,14 +25,14 @@ function About() {
       <article className="text-center font-montserrat">
         <h2 className="text-5xl font-semibold mb-6">About Me</h2>
         <div className="w-10 bg-Ruby h-2 mx-auto mb-6 rounded-md"></div>
-        <h2 className="text-xl mx-auto w-4/12 mb-20">
+        <h2 className="text-xl mx-auto lg:w-4/12 mb-20 w-9/12">
           Here you will find out more about my technical skills, what I do, and
           my professional interests.
         </h2>
       </article>
-      <article className="grid grid-cols-2 h-3/4 justify-items-center w-4/5 mx-auto">
+      <article className="grid lg:grid-cols-2 h-3/4 justify-items-center w-4/5 mx-auto">
         <aside className="w-9/12">
-          <p className="text-3xl font-semibold font-montserrat mb-8">
+          <p className="md:text-3xl font-semibold font-montserrat mb-8 text-2xl text-center lg:text-left">
             Learn More About Me
           </p>
           <aside className="text-lg leading-8">
@@ -59,8 +59,8 @@ function About() {
           </aside>
         </aside>
         <aside className="w-9/12">
-          <p className="text-3xl font-semibold mb-8">Technical Skills</p>
-          <div className="flex flex-wrap">{chips}</div>
+          <p className="text-2xl font-semibold mb-8 font-montserrat mt-24 lg:mt-0 text-center lg:text-left md:text-3xl">Technical Skills</p>
+          <div className="flex flex-wrap lg:w-full">{chips}</div>
         </aside>
       </article>
     </section>
