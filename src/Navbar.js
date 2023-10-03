@@ -8,13 +8,13 @@ function Navbar() {
       </h1>
       <ul className="flex justify-around w-1/3 text-xl font-montserrat pt-1 font-semibold">
         <li>
-          <a href="#about">About</a>
+          <a href="#about" className="hover:text-Ruby hover:underline underline-offset-8">About</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects" className="hover:text-Ruby hover:underline underline-offset-8">Projects</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact" className="hover:text-Ruby hover:underline underline-offset-8">Contact</a>
         </li>
       </ul>
     </nav>
