@@ -47,7 +47,7 @@ function About() {
               My projects seek to make life more <b>convenient</b> in any way
               possibe. When I'm not coding, I am always searching for new
               technologies that I can use for future projects as well as
-              improving my current projects which displayed in the
+              improving my current projects which are displayed in the
               <b> Projects</b> section.
             </p>
             <p>
