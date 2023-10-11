@@ -40,8 +40,8 @@ function About() {
               I'm a <b>software engineer</b> with a focus on full-stack
               development. I enjoy the entire process of full-stack development
               from designing the application, creating the frontend, and
-              building the backend. I'm open to
-              <b> shifting</b> my focus elsewhere depending on the opportunity.
+              building the backend. I'm open to <b> shifting</b> my focus
+              elsewhere depending on the opportunity.
             </p>
             <p className="mb-5">
               My projects seek to make life more <b>convenient</b> in any way
